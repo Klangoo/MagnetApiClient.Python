@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="klangooclient",
-    version="0.0.4",
+    version="1.0.0",
 	license='MIT License',
     author="Klangoo",
     author_email="support@klangoo.com",
     description="Magnet API client driver for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/Klangoo/MagnetApiClient.Python",
 	keywords=['Klangoo', 'Magnet', 'MagnetApiClient', 'Http Client'],
     packages=setuptools.find_packages(),
     classifiers=[
