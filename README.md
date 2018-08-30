@@ -1,4 +1,4 @@
-# Magney API Client for Python
+# Magnet API Client for Python
 
 
 # Getting Started
