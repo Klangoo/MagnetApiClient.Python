@@ -2,7 +2,7 @@
 
 # Getting Started
 
-# Supported platforms
+## Supported platforms
 Compatibilities:
   * `python 3.x`
   * `python 2.x`
