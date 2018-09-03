@@ -14,7 +14,7 @@ Compatibilities:
 ```bash
 pip install --upgrade klangooclient
 ```
-### Install MagnetAPIClient using Manually:
+### Install MagnetAPIClient manually:
 Download and add to your project the file [MagnetAPIClient.py](https://github.com/Klangoo/MagnetApiClient.Python/blob/master/klangooclient/MagnetAPIClient.py) if your are using python 3.x or [MagnetAPIClientV2.py](https://github.com/Klangoo/MagnetApiClient.Python/blob/master/klangooclient/MagnetAPIClientV2.py) if your are using python 2.x
 
 ## Quick Start
