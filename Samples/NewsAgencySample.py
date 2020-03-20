@@ -40,12 +40,12 @@ def get_article_entities(articleUID):
 		xmlDoc = ET.ElementTree(ET.fromstring(response)).getroot()
 		
 		if get_api_status(xmlDoc) == 'OK':
-			print 'GetArticleEntities:\n'
-			print response + '\n';
+			print('GetArticleEntities:\n')
+			print(response)
 		else:
 			handle_api_error(xmlDoc)
 	except:
-		print 'Caught exception: ', sys.exc_info()[0]
+		print('Caught exception: ', sys.exc_info()[0])
 		
 def get_article(articleUID):
 	try:
@@ -56,12 +56,12 @@ def get_article(articleUID):
 		xmlDoc = ET.ElementTree(ET.fromstring(response)).getroot()
 		
 		if get_api_status(xmlDoc) == 'OK':
-			print 'GetArticle:\n'
-			print response + '\n';
+			print('GetArticle:\n')
+			print(response)
 		else:
 			handle_api_error(xmlDoc)
 	except:
-		print 'Caught exception: ', sys.exc_info()[0]
+		print('Caught exception: ', sys.exc_info()[0])
 		
 def show_index():
 	try:
@@ -72,12 +72,12 @@ def show_index():
 		xmlDoc = ET.ElementTree(ET.fromstring(response)).getroot()
 		
 		if get_api_status(xmlDoc) == 'OK':
-			print 'ShowIndex:\n'
-			print response + '\n';
+			print('ShowIndex:\n')
+			print(response)
 		else:
 			handle_api_error(xmlDoc)
 	except:
-		print 'Caught exception: ', sys.exc_info()[0]
+		print('Caught exception: ', sys.exc_info()[0])
 		
 def get_api_status(xmlDoc):
 	return xmlDoc.find('api:status', NAMESPACE).text
@@ -90,7 +90,7 @@ def handle_api_error(xmlDoc):
 	errorMessageElm = error.find('api:errorMessage', NAMESPACE)
 	if errorMessageElm != None:
 		errorMessage = errorMessageElm.text
-	print 'Error occured -- errorNo: ', errorNo, ' -- errorMessage: ', errorMessage
+	print('Error occured -- errorNo: ', errorNo, ' -- errorMessage: ', errorMessage)
 	
 
 if __name__ == '__main__':
