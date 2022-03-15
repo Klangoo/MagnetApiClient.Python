@@ -40,5 +40,5 @@ client = MagnetAPIClient(ENDPOINT, CALK, SECRET_KEY)
 
 request = { 'text' : 'Real Madrid transfer news', 'lang' : 'en', 'format' : 'json' }
 
-json = client.callwebmethod('ProcessDocument', request, 'POST')
+rsp = client.callwebmethod('ProcessDocument', request, 'POST')
 ```
